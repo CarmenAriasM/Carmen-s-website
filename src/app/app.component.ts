@@ -20,6 +20,11 @@ ngOnInit() {
   if (savedTheme) {
     this.presentTheme$.next(savedTheme);
   }
+  const btn: any = document.querySelector("button.mobile-menu-button");
+  const menu: any = document.querySelector(".mobile-menu");
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
 }
 changeTheme() {
   this.presentTheme$.value === 'theme-light'
@@ -28,4 +33,6 @@ changeTheme() {
   localStorage.setItem('theme', this.presentTheme$.value);
   this.isDarkEnable = !this.isDarkEnable;
 }
+
+
 }
