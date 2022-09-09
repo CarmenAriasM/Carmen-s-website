@@ -5,16 +5,17 @@ module.exports = {
   theme: {
     colors: {
       // Light theme colors
-      'primary': '#2577c1',
+      'primary': '#FFFFFF',
       'secondary-bg': '#fff',
       'theme': '#fff',
-      'header-color': '#c23fe2',
+      'header-color': '#000000',
       'route-link-active': '#fff',
       'link-color': '#555050',
       'border-color': '#555050',
 
       // Dark theme colors
-      'dark-primary': '#ffffff',
+      'dark-text': '#FFFFFF',
+      'dark-primary': '#800080',
       'dark-secondary-bg': '#000000',
       'dark-theme': '#424242',
       'dark-header-color': '#424242',
