@@ -6,12 +6,12 @@ module.exports = {
     colors: {
       // Light theme colors
       'primary': '#FFFFFF',
-      'secondary-bg': '#fff',
+      'secondary-bg': '#DFF6FF',
       'theme': '#fff',
-      'header-color': '#000000',
-      'route-link-active': '#fff',
-      'link-color': '#555050',
-      'border-color': '#555050',
+      'header-color': '#06283D',
+      'route-link-active': '#1363DF',
+      'link-color': '#1363DF',
+      'border-color': '#47B5FF',
 
       // Dark theme colors
       'dark-text': '#FFFFFF',

@@ -24,7 +24,7 @@
     position: relative;
     display: inline-block;
     padding: 10px 20px;
-    color: #800080;
+    color: #47B5FF;
     font-size: 16px;
     text-decoration: none;
     text-transform: uppercase;
@@ -35,10 +35,10 @@
   }
   
   #form-submit:hover {
-    background: #800080;
+    background: #47B5FF;
     color: #fff;
     border-radius: 5px;
-    box-shadow: 0 0 5px #800080, 0 0 25px #800080, 0 0 50px #800080, 0 0 100px #800080;
+    box-shadow: 0 0 5px #47B5FF, 0 0 25px #47B5FF, 0 0 50px #47B5FF, 0 0 100px #47B5FF;
   }
   
   #form-submit span {
@@ -51,7 +51,7 @@
     left: -100%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(90deg, transparent, #800080);
+    background: linear-gradient(90deg, transparent, #47B5FF);
     animation: btn-anim1 1s linear infinite;
   }
   
@@ -69,7 +69,7 @@
     right: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(180deg, transparent, #800080);
+    background: linear-gradient(180deg, transparent, #47B5FF);
     animation: btn-anim2 1s linear infinite;
     animation-delay: .25s
   }
@@ -88,7 +88,7 @@
     right: -100%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(270deg, transparent, #800080);
+    background: linear-gradient(270deg, transparent, #47B5FF);
     animation: btn-anim3 1s linear infinite;
     animation-delay: .5s
   }
@@ -107,7 +107,7 @@
     left: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(360deg, transparent, #800080);
+    background: linear-gradient(360deg, transparent, #47B5FF);
     animation: btn-anim4 1s linear infinite;
     animation-delay: .75s
   }
@@ -120,3 +120,48 @@
       bottom: 100%;
     }
   }
+
+#game{
+  width: 300px;
+  height: 200px;
+  border: 1px solid black;
+  margin: auto;
+}
+#character{
+  width: 40px;
+/*   height: 50px;
+ */  /* background-color: red; */
+  position: relative;
+  top: 150px; 
+}
+#character img {
+  height: 50px;
+  width: 40px;
+}
+@keyframes jump{
+  0%{top: 150px;}
+  30%{top: 100px;}
+  70%{top: 100px;}
+  100%{top: 150px;}
+}
+.animate{
+  animation: jump 300ms linear;
+}
+#block{
+  width: 20px;
+  height: 40px;
+/*   background-color: blue;
+ */  position: relative;
+  top: 130px; 
+  left: 275px; 
+}
+#block img {
+  width: 40px;
+}
+@keyframes block{
+  0%{left: 300px} 
+  100%{left: -20px}
+}
+.animate-block {
+  animation: block 1s infinite linear;
+}

@@ -8,7 +8,8 @@ import { HomeComponent } from './components/home/home.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ProjectsComponent } from './projects/projects.component';
-import { ContactComponent } from './contact/contact.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { JuegoComponent } from './components/juego/juego.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ContactComponent } from './contact/contact.component';
     HomeComponent,
     AboutMeComponent,
     ProjectsComponent,
-    ContactComponent
+    ContactComponent,
+    JuegoComponent
   ],
   imports: [
     BrowserModule,
