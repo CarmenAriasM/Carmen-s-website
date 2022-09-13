@@ -20,13 +20,13 @@ export class HomeComponent implements OnInit {
     setTimeout(this.removeJump,300); 
   };
   animateBlock() {
-    const block: any = document.getElementById("block");
+    const block = document.getElementById("block")!;
     block.classList.add("animate-block");
-    const game: any = document.getElementById("gameOver");
+    const game = document.getElementById("gameOver")!;
     game.style.visibility = "hidden";
   }
   removeJump(){
-    const character: any = document.getElementById("character");
+    const character = document.getElementById("character")!;
     character.classList.remove("animate");
   }
   
@@ -35,9 +35,9 @@ export class HomeComponent implements OnInit {
     let characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
     let blockLeft = parseInt(window.getComputedStyle(this.block).getPropertyValue("left"));
     
-    if(blockLeft<20 && blockLeft>-20 && characterTop>=130){
-      const block: any = document.getElementById("block");
-      const game: any = document.getElementById("gameOver");
+    if(blockLeft<10 && blockLeft>-10 && characterTop>=180){
+      const block = document.getElementById("block")!;
+      const game = document.getElementById("gameOver")!;
       block.classList.remove("animate-block");
       game.style.visibility = "visible";
     } 

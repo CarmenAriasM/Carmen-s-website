@@ -124,25 +124,22 @@
 #game{
   width: 300px;
   height: 200px;
-/*   border: 1px solid black;
- */  margin: 40px auto auto auto;
+  margin: 40px auto auto auto;
 }
 #character{
   width: 40px;
-/*   height: 50px;
- */  /* background-color: red; */
   position: relative;
-  top: 140px; 
+  top: 190px; 
 }
 #character img {
   height: 50px;
   width: 40px;
 }
 @keyframes jump{
-  0%{top: 150px;}
-  30%{top: 100px;}
-  70%{top: 100px;}
-  100%{top: 150px;}
+  0%{top: 180px;}
+  30%{top: 50px;}
+  70%{top: 50px;}
+  100%{top: 180px;}
 }
 .animate{
   animation: jump 300ms linear;
@@ -170,4 +167,88 @@ position: relative;
   background-position: center;
   background-size: 400px 400px;
   height: 300px;
+}
+@media (max-width: 1200px) and (min-width: 540px){
+  .laptop {
+    background-image: url("/assets/img/tablet (1).png");
+    background-size: 500px 500px;
+    height: 500px;
+  }
+  #game {
+    height: 410px;
+    width: 330px;
+  }
+  #character {
+    top: 350px;
+  }
+  #block {
+    left: 275px;
+  }
+  @keyframes jump{
+    0%{top: 340px;}
+    30%{top: 170px;}
+    70%{top: 170px;}
+    100%{top: 340px;}
+  }
+}
+@media (max-width: 1200px) and (min-width: 530px){
+  .laptop {
+    background-image: url("/assets/img/tablet (1).png");
+    background-size: 500px 500px;
+    height: 500px;
+  }
+  #game {
+    height: 410px;
+    width: 330px;
+  }
+  #character {
+    top: 350px;
+  }
+  #block {
+    left: 275px;
+  }
+  @keyframes jump{
+    0%{top: 340px;}
+    30%{top: 170px;}
+    70%{top: 170px;}
+    100%{top: 340px;}
+  }
+}
+@media (max-width: 530px){
+  .laptop {
+    background-image: url("/assets/img/phone.png");
+    background-size: 500px 500px;
+    height: 500px;
+  }
+   #game {
+    width: 200px;
+height: 340px;
+margin: 65px auto auto auto;
+  }
+  #character {
+    top: 280px;
+  }
+  #block {
+    left: 150px;
+  }
+  @keyframes block{
+    0%{left: 150px} 
+    100%{left: -20px}
+  }
+}
+@media (min-width: 1200px) {
+    .laptop {
+      background-size: 480px 480px;
+    }
+    #game {
+      width: 360px;
+      height: 240px;
+      margin: 20px auto auto auto;
+    }
+    #character {
+      top: 180px;
+    }
+    #block {
+      left: 305px;
+    }
 }

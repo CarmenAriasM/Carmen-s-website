@@ -13,9 +13,9 @@ box-shadow: 0px 10px 8px rgb(0 0 0 / 12%);}
 .glow {
     list-style: none;
     margin: 0 15px;
-  }
+}
   
-  .glow a {
+.glow a {
     position: relative; 
     display: block;
     width: 30px;
@@ -25,9 +25,9 @@ box-shadow: 0px 10px 8px rgb(0 0 0 / 12%);}
     border-radius: 50%;
     font-size: 30px;
     transition: .5s;
-  }
+}
   
-  .glow a::before {
+.glow a::before {
     content: '';
     position: absolute;
     top: 0;
@@ -38,14 +38,14 @@ box-shadow: 0px 10px 8px rgb(0 0 0 / 12%);}
     transition: .5s;
     transform: scale(.9);
     z-index: -1;
-  }
+}
   
-  .glow-sun::before {
+.glow-sun::before {
     background: #ffee10;
-  }
-  .glow-moon::before {
+}
+.glow-moon::before {
     background: #a2a3c5;
-  }
+}
   .glow a:hover::before {
     transform: scale(1.1);
   }
@@ -102,3 +102,4 @@ box-shadow: 0px 10px 8px rgb(0 0 0 / 12%);}
     transform-origin: bottom left;
     width: 28px;
   }
+

@@ -65,7 +65,15 @@ box-shadow: 0px 0px 8px rgba(0,0,0,.6);
       </ul>
     </div>
   </nav>
-  <main class="bg-secondary-bg dark:bg-dark-secondary-bg dark:text-dark-primary">
+  <main class="bg-secondary-bg dark:bg-dark-secondary-bg dark:text-dark-primary pb-4 lg:pb-10">
     <router-outlet></router-outlet>
   </main>
+  <footer>
+    <nav class="text-primary z-50 dark:text-dark-text bg-header-color flex flex-col space-y-4 p-6 lg:flex-row lg:space-y-0 text-center lg:place-content-around">
+      <a href="#" class="">Inicio</a>
+      <a href="#" class="">Sobre mí</a>
+      <a href="#" class="">Proyectos</a>
+      <a href="#" class="">Contacto</a>
+    </nav>
+  </footer>
 </body>
