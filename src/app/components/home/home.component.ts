@@ -7,11 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   block: any = document.getElementById("block");
-  isMoving: boolean = false;
   constructor() { }
 
   ngOnInit(): void {
-    
     setInterval(this.checkDead, 10);
   }
   jump(){
@@ -23,28 +21,26 @@ export class HomeComponent implements OnInit {
   };
   animateBlock() {
     const block: any = document.getElementById("block");
-
-      block.classList.add("animate-block");
-
+    block.classList.add("animate-block");
+    const game: any = document.getElementById("gameOver");
+    game.style.visibility = "hidden";
   }
   removeJump(){
     const character: any = document.getElementById("character");
-   character.classList.remove("animate");
+    character.classList.remove("animate");
   }
   
- checkDead(){
-  const character: any = document.getElementById("character");
-
+  checkDead(){
+    const character = document.getElementById("character")!;
     let characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
     let blockLeft = parseInt(window.getComputedStyle(this.block).getPropertyValue("left"));
+    
     if(blockLeft<20 && blockLeft>-20 && characterTop>=130){
-
       const block: any = document.getElementById("block");
+      const game: any = document.getElementById("gameOver");
       block.classList.remove("animate-block");
-      alert("Game over");
+      game.style.visibility = "visible";
     } 
-}
-
-
+  }
 
 }

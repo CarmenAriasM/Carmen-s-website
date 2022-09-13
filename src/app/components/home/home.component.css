@@ -124,15 +124,15 @@
 #game{
   width: 300px;
   height: 200px;
-  border: 1px solid black;
-  margin: auto;
+/*   border: 1px solid black;
+ */  margin: 40px auto auto auto;
 }
 #character{
   width: 40px;
 /*   height: 50px;
  */  /* background-color: red; */
   position: relative;
-  top: 150px; 
+  top: 140px; 
 }
 #character img {
   height: 50px;
@@ -148,20 +148,26 @@
   animation: jump 300ms linear;
 }
 #block{
-  width: 20px;
   height: 40px;
-/*   background-color: blue;
- */  position: relative;
-  top: 130px; 
-  left: 275px; 
+position: relative;
+/* top: 70px;
+ */left: 250px;
+  width: 50px;
 }
 #block img {
   width: 40px;
 }
 @keyframes block{
-  0%{left: 300px} 
+  0%{left: 270px} 
   100%{left: -20px}
 }
 .animate-block {
   animation: block 1s infinite linear;
+}
+.laptop {
+  background-image: url("/assets/img/laptop.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 400px 400px;
+  height: 300px;
 }
