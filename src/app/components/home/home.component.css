@@ -1,31 +1,36 @@
-.transition-underline::after {
-  transition: opacity 300ms, transform 300ms;
-}
-.transition-underline {
-  display: block;
+.hover-underline-animation {
+  display: inline-block;
   position: relative;
-  padding: 0.2em 0;
 }
-.transition-underline:hover::after,
-.transition-underline:focus::after {
-  opacity: 1;
-  transform: translate3d(0, 0.2em, 0);
-  transform: scale(1);
-
+.transparent {
+  color: transparent;
 }
-.transition-underline::after {
-  opacity: 1;
-  transform: scale(0);
-  transform-origin: center;
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #06283D;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
 }
 
-
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.polygon {
+  background-color: #47B5FF;
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
 #form-submit {
     position: relative;
     display: inline-block;
     padding: 10px 20px;
     color: #47B5FF;
-    font-size: 16px;
     text-decoration: none;
     text-transform: uppercase;
     overflow: hidden;
@@ -162,39 +167,17 @@ position: relative;
   animation: block 1s infinite linear;
 }
 .laptop {
-  background-image: url("/assets/img/laptop.png");
-  background-repeat: no-repeat;
+/*   background-image: url("/assets/img/laptop.png");
+ */  background-repeat: no-repeat;
   background-position: center;
   background-size: 400px 400px;
   height: 300px;
 }
-@media (max-width: 1200px) and (min-width: 540px){
+
+@media (max-width: 1024px) and (min-width: 530px){
   .laptop {
-    background-image: url("/assets/img/tablet (1).png");
-    background-size: 500px 500px;
-    height: 500px;
-  }
-  #game {
-    height: 410px;
-    width: 330px;
-  }
-  #character {
-    top: 350px;
-  }
-  #block {
-    left: 275px;
-  }
-  @keyframes jump{
-    0%{top: 340px;}
-    30%{top: 170px;}
-    70%{top: 170px;}
-    100%{top: 340px;}
-  }
-}
-@media (max-width: 1200px) and (min-width: 530px){
-  .laptop {
-    background-image: url("/assets/img/tablet (1).png");
-    background-size: 500px 500px;
+/*     background-image: url("/assets/img/tablet (1).png");
+ */    background-size: 500px 500px;
     height: 500px;
   }
   #game {
@@ -216,8 +199,8 @@ position: relative;
 }
 @media (max-width: 530px){
   .laptop {
-    background-image: url("/assets/img/phone.png");
-    background-size: 500px 500px;
+/*     background-image: url("/assets/img/phone.png");
+ */    background-size: 500px 500px;
     height: 500px;
   }
    #game {
@@ -236,7 +219,7 @@ margin: 65px auto auto auto;
     100%{left: -20px}
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
     .laptop {
       background-size: 480px 480px;
     }

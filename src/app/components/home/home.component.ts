@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   block: any = document.getElementById("block");
-  constructor() { }
+  constructor() { 
+  }
 
   ngOnInit(): void {
     setInterval(this.checkDead, 10);
@@ -42,5 +43,5 @@ export class HomeComponent implements OnInit {
       game.style.visibility = "visible";
     } 
   }
-
+  
 }

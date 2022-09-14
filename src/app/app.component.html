@@ -26,27 +26,27 @@ box-shadow: 0px 0px 8px rgba(0,0,0,.6);
   <nav class="main-nav text-primary sticky top-0 z-50 dark:text-dark-text bg-header-color dark:bg-[url('/assets/img/header-bg.png')] after:content-[''] after:block after:w-11/12 after:h-7">
     <div class="mx-6 contents max-w-6xl mx-auto px-4">
       <div class="flex justify-end h-14">
-        <div class="ml-6 flex justify-between space-x-12 w-full ">
-          <a class="font-mono pt-3.5 font-bold animate__animated animate__bounce" href="/">
+        <div class="ml-6 flex justify-between md-menu:justify-around w-full ">
+          <a class="font-mono pt-3.5 font-bold animate__animated animate__bounce md:text-2xl md:p-2.5	" href="/">
             Carmen Arias
             <!-- <div *ngIf="!isDarkEnable"><img class="w-20" src="/assets/img/logocarmen.png" alt="" srcset=""></div>
             <div *ngIf="isDarkEnable"><img class="w-20" src="/assets/img/logocarmendark.png" alt="" srcset=""></div> -->
             </a>
-          <div class="glow pt-3 hover:scale-125">
+          <div class="glow pt-3 mx-4 hover:scale-125 md-menu:ml-auto	">
             <a class="glow-sun flex items-center	justify-center	" *ngIf="isDarkEnable" (click)="changeTheme()" mode-button style="font-size:20px" title="Modo día">
               <svg class="inline pb-1 svg-home" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="20px" height="20px"><path d="M 11 0 L 11 3 L 13 3 L 13 0 L 11 0 z M 4.2226562 2.8085938 L 2.8085938 4.2226562 L 4.9296875 6.34375 L 6.34375 4.9296875 L 4.2226562 2.8085938 z M 19.777344 2.8085938 L 17.65625 4.9296875 L 19.070312 6.34375 L 21.191406 4.2226562 L 19.777344 2.8085938 z M 12 5 C 8.1458514 5 5 8.1458514 5 12 C 5 15.854149 8.1458514 19 12 19 C 15.854149 19 19 15.854149 19 12 C 19 8.1458514 15.854149 5 12 5 z M 12 7 C 14.773268 7 17 9.2267316 17 12 C 17 14.773268 14.773268 17 12 17 C 9.2267316 17 7 14.773268 7 12 C 7 9.2267316 9.2267316 7 12 7 z M 0 11 L 0 13 L 3 13 L 3 11 L 0 11 z M 21 11 L 21 13 L 24 13 L 24 11 L 21 11 z M 4.9296875 17.65625 L 2.8085938 19.777344 L 4.2226562 21.191406 L 6.34375 19.070312 L 4.9296875 17.65625 z M 19.070312 17.65625 L 17.65625 19.070312 L 19.777344 21.191406 L 21.191406 19.777344 L 19.070312 17.65625 z M 11 21 L 11 24 L 13 24 L 13 21 L 11 21 z"/></svg>
             </a>
             <a class="glow-moon" *ngIf="!isDarkEnable" (click)="changeTheme()" mode-button style="font-size:20px" title="Modo noche"><fa-icon [icon]="faMoon"></fa-icon>
             </a> 
           </div>
-          <div class="hidden tablet:flex laptop:flex items-center space-x-1">
+          <div class="hidden md-menu:flex lg:flex items-center space-x-1 md-menu:mr-6">
             <a href="#" class="zoom py-4 px-2 text-gray-500 hover:text-white font-semibold ">Inicio</a>
             <a href="#" class="zoom py-4 px-2 text-gray-500 font-semibold hover:text-white transition duration-300">Sobre mí</a>
             <a href="#" class="zoom py-4 px-2 text-gray-500 font-semibold hover:text-white transition duration-300">Proyectos</a>
             <a href="#" class="zoom py-4 px-2 text-gray-500 font-semibold hover:text-white transition duration-300">Contacto</a>
           </div>
         </div>
-        <div class="mx-6 tablet:hidden laptop:hidden flex items-center">
+        <div class="mx-6 md-menu:hidden lg:hidden flex items-center">
           <a class="nav-toggle text-white	bg-white	">
             <span class="bar bg-white"></span>
             <span class="bar bg-white"></span>

@@ -1,43 +1,42 @@
-<div class="grid justify-center	p-2.5 gap-4 ">
-    <div class="text-center pt-5">
-        <div>Hola, soy</div>
-        <div class="font-bold font-mono text-2xl
-        ">Carmen Arias</div>
-        <div>Desarrolladora web</div>
-    <!--     <a class="text-xl font-mono cursor-crosshair	p-3
-        " href="/assets/CV.pdf">Mi CV</a> -->
-        <a id="form-submit" class="text-xl font-mono p-3
-        " href="/assets/CV.pdf">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            Mi CV
-        </a>
-        <ol class="pt-5">
-            <li><i class="fab fa-github"></i><a class="after:content-[''] absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-violet-900	after:opacity-0 transition-underline" href="https://github.com/CarmenAriasM">
-                GitHub</a></li>
-            <li><i class="fab fa-linkedin"></i><a href="#" class="transition-underline">
-                Linkedin</a></li>
-            <li><i class="fas fa-envelope"></i><a href="#" class="transition-underline">
-                maricarmen98a@gmail.com</a></li>
+<div class="grid justify-center	p-2.5 gap-4 lg:grid-cols-2 lg:gap-7 lg:p-10	lg:p-16">
+    <div class="text-center pt-5 lg:text-left lg:pl-20">
+        <div class="lg:text-2xl">Hola, soy</div>
+        <div class="font-bold font-mono text-2xl lg:text-4xl">
+            <span class="bg-clip-text transparent bg-gradient-to-r p-[6px] from-[#47B5FF] via-[#06283D] to-[#47B5FF]">Carmen Arias</span> 
+        </div>
+        <div class="lg:text-2xl">Desarrolladora web</div>
+        <div>
+            <a id="form-submit" class="text-xl font-mono p-3 lg:text-2xl
+            " href="/assets/CV.pdf">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Mi CV
+            </a>
+        </div>
+        <ol class="pt-5 flex flex-col lg:flex-row lg:max-w-md lg:justify-between lg:text-center dark:text-border-color">
+            <li class="hover:scale-110"><a class="hover-underline-animation text-header-color dark:text-border-color" href="https://github.com/CarmenAriasM"><i class="fab fa-github pr-1.5"></i>GitHub</a></li>
+            <li class="hover:scale-110"><a class="hover-underline-animation" href="#" ><i class="fab fa-linkedin pr-1.5"></i>Linkedin</a></li>
+            <li class="hover:scale-110"><a class="hover-underline-animation" href="mailto:maricarmen98a@gmail.com"><i class="fas fa-envelope pr-1.5"></i>Gmail</a></li>
         </ol>
     </div>
-    <div class="bg-primary rounded-lg py-6 px-6	font-mono text-sm">
+    <div class="bg-primary dark:bg-header-color dark:text-dark-primary rounded-lg py-6 px-6	font-mono text-sm max-w-2xl lg:mb-28 lg:mt-8">
         <ol>
-            <li>1 <span class="pl-2"></span> class Persona {{ '{' }}</li>
-            <li>2 <span class="pl-4"></span> constructor() {{ '{' }}</li>
-            <li>3 <span class="pl-5"></span> this.nombre = "<b>Carmen Arias</b>";</li>
-            <li>4 <span class="pl-5"></span> this.lenguajes = ["JavaScript", "TypeScript", "PHP"];</li>
-            <li>5 <span class="pl-5"></span> this.frameworks = ["Angular", "Laravel", "Code Igniter"];</li>
-            <li>6 <span class="pl-5"></span> this.maquetación = ["HTML", "CSS", "Tailwind", "Bootstrap", "Sass"];</li>
-            <li>7  {{ '}' }}</li>      
+            <li>1 <span class="pl-2"></span> <span class="text-link-color">class </span><span class="text-border-color">Persona</span>  {{ '{' }}</li>
+            <li>2 <span class="pl-4"></span><span class="text-link-color">constructor(){{ '{' }} </span> </li>
+            <li>3 <span class="pl-5"></span> <span class="text-dark-route-link-active">this</span><span class="text-grey-sun dark:text-grey-moon">.nombre =</span> "Carmen Arias";</li>
+            <li>4 <span class="pl-5"></span> <span class="text-dark-route-link-active">this</span><span class="text-grey-sun dark:text-grey-moon">.lenguajes = </span>["JavaScript", "TypeScript", "PHP"];</li>
+            <li>5 <span class="pl-5"></span> <span class="text-dark-route-link-active">this</span><span class="text-grey-sun dark:text-grey-moon">.frameworks = </span>["Angular", "Laravel", "Code Igniter"];</li>
+            <li>6 <span class="pl-5"></span> <span class="text-dark-route-link-active">this</span><span class="text-grey-sun dark:text-grey-moon">.maquetación =</span> ["HTML", "CSS", "Tailwind", "Bootstrap", "Sass"];</li>
+            <li>7 <span class="pl-4"></span> <span class="text-link-color"> {{ '}' }}</span></li>      
+            <li>8 <span class="pl-2"></span>  {{ '}' }}</li>      
         </ol>
     </div>
-    <div class="text-center">¿Te aburres? Juega este minijuego al estilo Chrome Dino haciendo clic para saltar</div>
-    <div class="laptop">  
-        <div id="game" (click)="jump()" class="rounded-xl bg-gradient-to-r p-[6px] from-[#06283D] via-[#47B5FF] to-[#06283D]">
-            <div class="flex flex-col justify-between h-full bg-primary rounded-lg">
+    <div class="text-center lg:col-span-2 ">¿Te aburres? Juega este minijuego al estilo Chrome Dino haciendo clic para saltar</div>
+    <div class="laptop lg:col-span-2  bg-[url('/assets/img/phone.png')] md:bg-[url('/assets/img/tablet.png')] md:dark:bg-[url('/assets/img/tablet-blanco.png')] lg:bg-[url('/assets/img/laptop.png')] lg:dark:bg-[url('/assets/img/laptop-blanco.png')] dark:bg-[url('/assets/img/phone-blanco.png')] ">  
+        <div id="game" (click)="jump()" class="rounded-xl bg-gradient-to-r p-[6px] from-[#06283D] via-[#47B5FF] to-[#06283D] ">
+            <div class="flex flex-col justify-between h-full bg-primary rounded-lg bg-secondary-bg dark:bg-header-color dark:text-dark-primary">
                 <div id="character"><img src="/assets/img/coding (1).png" alt=""></div>
                 <div id="gameOver" class="font-mono text-sm text-center invisible">Tienes un bug en tu código. Haz clic de nuevo para arreglarlo.</div>
                 <div id="block"><img src="/assets/img/bug-report.png" alt=""></div>
