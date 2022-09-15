@@ -16,6 +16,7 @@ module.exports = {
       'grey-sun': '#dbcc0b',
       'color1': '#192E47',
       'color2': '#030617',
+      'emoji': '#eeb517',
       
       // Dark theme colors
       'dark-text': '#FFFFFF',
@@ -26,6 +27,7 @@ module.exports = {
       'dark-route-link-active': '#ff500b',
       'dark-link-color': '#fff',
       'dark-border-color': '#1cd61c',
+      'dark-emoji': '#a2a3c5'
     },
     screens: {
       'sm': '640px',
@@ -35,10 +37,10 @@ module.exports = {
       'xl': '1280px',
       '2xl': '1536px',
     },
-   /*  backgroundImage: {
+     backgroundImage: {
       'gradient-radial': 'radial-gradient(ellipse at bottom, #192E47 0%, #030617 100%)', 
       'gradient-radial2': 'radial-gradient(ellipse at bottom, #DFF6FF 0%, #1363DF 100%)', 
-    }, */
+    }, 
     extend: {},
   },
   plugins: [],
