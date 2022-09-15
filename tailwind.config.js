@@ -14,6 +14,8 @@ module.exports = {
       'border-color': '#47B5FF',
       'grey-moon': '#a2a3c5',
       'grey-sun': '#dbcc0b',
+      'color1': '#192E47',
+      'color2': '#030617',
       
       // Dark theme colors
       'dark-text': '#FFFFFF',
@@ -33,6 +35,10 @@ module.exports = {
       'xl': '1280px',
       '2xl': '1536px',
     },
+   /*  backgroundImage: {
+      'gradient-radial': 'radial-gradient(ellipse at bottom, #192E47 0%, #030617 100%)', 
+      'gradient-radial2': 'radial-gradient(ellipse at bottom, #DFF6FF 0%, #1363DF 100%)', 
+    }, */
     extend: {},
   },
   plugins: [],
