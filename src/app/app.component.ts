@@ -14,7 +14,7 @@ export class AppComponent {
   isDarkEnable = false;
   presentTheme$ = new BehaviorSubject<string>('theme-light');
 
-  constructor( public router: Router) {}
+  constructor() {}
   
   ngOnInit() {
     /* const btn: any = document.querySelector(".nav-toggle");
@@ -43,7 +43,5 @@ export class AppComponent {
     localStorage.setItem('theme', this.presentTheme$.value);
     this.isDarkEnable = !this.isDarkEnable;
   }
-  aboutMe(): void {
-    this.router.navigateByUrl('sobre-mi');
-  }
+
 }
