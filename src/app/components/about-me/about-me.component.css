@@ -1,8 +1,6 @@
 
 
-  svg {
-    height: 50vmin;
-  }
+  
   .code-block {
     animation: read 1s infinite linear;
   }
@@ -19,37 +17,17 @@
   .code-block rect:nth-of-type(12) {
     fill: rgba(230,25,128,0.5);
   }
-  @keyframes read {
-    to {
-      transform: translate(0, -283.5px);
-    }
+@keyframes read {
+  to {
+    transform: translate(0, -283.5px);
   }
-
-.habilidades {
-    display: grid;
-    justify-items: center;
-    margin-bottom: 30px;
-    
 }
-
-.habilidades__grid {
-    text-align: center;
-    margin-bottom: 30px;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-gap: 10px;
-    justify-items: center;
-    
-}   
-.habilidades__grid fa-icon {
+ 
+/* fa-icon {
     color: #06283D;
     font-size: 4.5em;
-}
-.habilidades__grid fa-icon:hover, fa-icon:active {
+} */
+/* fa-icon:hover, fa-icon:active {
     color: #1363DF;
 }
-@media (min-width: 768px) {
-    .habilidades .habilidades__grid {
-        grid-template-columns: repeat(5, minmax(0, 1fr));
-    }
-}
+ */

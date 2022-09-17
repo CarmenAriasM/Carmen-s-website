@@ -37,10 +37,10 @@ module.exports = {
       'xl': '1280px',
       '2xl': '1536px',
     },
-     backgroundImage: {
+   /*   backgroundImage: {
       'gradient-radial': 'radial-gradient(ellipse at bottom, #192E47 0%, #030617 100%)', 
       'gradient-radial2': 'radial-gradient(ellipse at bottom, #DFF6FF 0%, #1363DF 100%)', 
-    }, 
+    },  */
     extend: {},
   },
   plugins: [],
