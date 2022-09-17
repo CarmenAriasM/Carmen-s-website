@@ -8,11 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
   block: any = document.getElementById("block");
   character: any = document.getElementById("character");
+  public timerInterval:any;
+
   constructor() { 
   }
 
-  ngOnInit(): void {
-    setInterval(this.checkDead, 10);
+  ngOnInit( ): void {
+    this.timerInterval = setInterval(this.checkDead, 10);
   }
   jump(){
    const character: any = document.getElementById("character");
@@ -35,7 +37,7 @@ export class HomeComponent implements OnInit {
   checkDead(){
     let characterTop = parseInt(window.getComputedStyle(this.character).getPropertyValue("top"));
     let blockLeft = parseInt(window.getComputedStyle(this.block).getPropertyValue("left"));
-    
+  
     if(blockLeft<10 && blockLeft>-10 && characterTop>=180){
       const block = document.getElementById("block")!;
       const game = document.getElementById("gameOver")!;
@@ -43,5 +45,8 @@ export class HomeComponent implements OnInit {
       game.style.visibility = "visible";
     } 
   }
-  
+
+  ngOnDestroy() {
+    clearInterval(this.timerInterval);
+  }
 }
