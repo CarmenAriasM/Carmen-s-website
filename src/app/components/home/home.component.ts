@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   block: any = document.getElementById("block");
+  character: any = document.getElementById("character");
   constructor() { 
   }
 
@@ -32,8 +33,7 @@ export class HomeComponent implements OnInit {
   }
   
   checkDead(){
-    const character = document.getElementById("character")!;
-    let characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
+    let characterTop = parseInt(window.getComputedStyle(this.character).getPropertyValue("top"));
     let blockLeft = parseInt(window.getComputedStyle(this.block).getPropertyValue("left"));
     
     if(blockLeft<10 && blockLeft>-10 && characterTop>=180){
