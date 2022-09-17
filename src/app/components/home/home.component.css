@@ -235,3 +235,6 @@ margin: 65px auto auto auto;
       left: 305px;
     }
 }
+.max-w {
+  max-width: 80%;
+}

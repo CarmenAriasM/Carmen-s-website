@@ -37,10 +37,18 @@ module.exports = {
       'xl': '1280px',
       '2xl': '1536px',
     },
-   /*   backgroundImage: {
-      'gradient-radial': 'radial-gradient(ellipse at bottom, #192E47 0%, #030617 100%)', 
-      'gradient-radial2': 'radial-gradient(ellipse at bottom, #DFF6FF 0%, #1363DF 100%)', 
-    },  */
+    backgroundImage: {
+      'foto-malta': "url('/assets/img/foto-malta_50.jpg')",
+      'gradiant': "linear-gradient(to right, var(--tw-gradient-stops))",
+      'button': 'radial-gradient(100% 100% at 100% 0, #47B5FF 0, #1363DF 100%)',
+      
+    },
+    boxShadow: {
+      'button': 'rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset',
+      'button-focus': '#1363DF 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #1363DF 0 -3px 0 inset',
+      'button-hover': 'rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #1363DF 0 -3px 0 inset',
+      'button-active': '#1363DF 0 3px 7px inset'
+    },
     extend: {},
   },
   plugins: [],
