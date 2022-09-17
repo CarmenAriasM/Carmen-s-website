@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -13,7 +14,7 @@ export class AppComponent {
   isDarkEnable = false;
   presentTheme$ = new BehaviorSubject<string>('theme-light');
 
-  constructor() {}
+  constructor( public router: Router) {}
   
   ngOnInit() {
     /* const btn: any = document.querySelector(".nav-toggle");
@@ -42,5 +43,7 @@ export class AppComponent {
     localStorage.setItem('theme', this.presentTheme$.value);
     this.isDarkEnable = !this.isDarkEnable;
   }
-  
+  aboutMe(): void {
+    this.router.navigateByUrl('sobre-mi');
+  }
 }
