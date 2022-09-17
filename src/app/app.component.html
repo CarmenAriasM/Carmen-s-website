@@ -44,7 +44,7 @@ box-shadow: 0px 0px 8px rgba(0,0,0,.6);
           </div>
           <div class="hidden md-menu:flex lg:flex items-center space-x-1 md-menu:mr-6">
             <a href="/" class="zoom py-4 px-2 text-gray-500 hover:text-white font-semibold ">Inicio</a>
-            <a (click)="aboutMe()"  class="zoom py-4 px-2 text-gray-500 font-semibold hover:text-white transition duration-300">Sobre mí</a>
+            <a routerLink="/sobre-mi"  class="zoom py-4 px-2 text-gray-500 font-semibold hover:text-white transition duration-300">Sobre mí</a>
             <a href="#" class="zoom py-4 px-2 text-gray-500 font-semibold hover:text-white transition duration-300">Proyectos</a>
             <a href="#" class="zoom py-4 px-2 text-gray-500 font-semibold hover:text-white transition duration-300">Contacto</a>
           </div>
@@ -74,7 +74,7 @@ box-shadow: 0px 0px 8px rgba(0,0,0,.6);
   <footer>
     <nav class="text-primary z-50 dark:text-dark-text bg-header-color flex flex-col space-y-4 p-6 lg:flex-row lg:space-y-0 text-center lg:place-content-around">
       <a href="/" class="">Inicio</a>
-      <a (click)="aboutMe()" class="">Sobre mí</a>
+      <a routerLink="/sobre-mi" class="">Sobre mí</a>
       <a href="#" class="">Proyectos</a>
       <a href="#" class="">Contacto</a>
     </nav>
