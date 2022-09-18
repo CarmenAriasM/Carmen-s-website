@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { DomSanitizer } from '@angular/platform-browser';
 import { faHtml5, faCss3, faJs, faAngular, faLaravel, faGit, faPhp, faGithub, faFigma,faDrupal, faBootstrap, faSass, faNpm } from '@fortawesome/free-brands-svg-icons';
 
 
@@ -22,19 +21,21 @@ export class AboutMeComponent implements OnInit {
   bt = faBootstrap;
   sass = faSass;
   npm = faNpm;
+
   random: any;
   choice: any;
   chosenPic: any;
-  cat: boolean = false;
-  tank: boolean = false;
-  hedgehog: boolean = false;
-  erasmus: boolean = false;
-  malta: boolean = false;
-  translation: boolean = false;
   facts = ["Me encantan los erizos", "Tengo un gato", "Estudié traducción en Sevilla", "Me gusta War Thunder", "La foto de arriba es de Malta", "Hice un Erasmus en Dublín"];
   showFact: boolean = false;
-  pics = ["cat-laptop.gif", "hola", "erizo.gif"];
-  constructor(private sanitizer:DomSanitizer) {
+  factsImages: any = {
+    0: ['erizo.gif'],
+    1: ['cat.gif'],
+    2: ['translation'],
+    3: ['tank.gif'],
+    4: ['malta'],
+    5: ['irish.gif'],
+  };   
+  constructor() {
     
   }
   ngOnInit() {
@@ -50,19 +51,32 @@ export class AboutMeComponent implements OnInit {
     emoji.classList.add("code-block");
   }
   generateFact() {
-    this.cat = false;
-    this.hedgehog = false;
-    this.tank = false;
-    this.erasmus = false;
-    this.malta = false;
-    this.translation = false;
-    this.showFact = true;
-    const pic = document.getElementById("buttonPic")!;
+        
+     this.showFact = true;
+     this.random = Math.floor(Math.random() * this.facts.length);
+    this.choice = [this.facts[this.random]]
 
+    if(this.factsImages[this.random]) {
+      this.chosenPic = this.factsImages[this.random];
+  
+    } 
+
+
+  }
+  
+   
+} /*  this.showFact = true;
     this.random = Math.floor(Math.random() * this.facts.length);
     this.choice = [this.facts[this.random]]
 
-    if(this.random == 0 ) {
+    if(this.factsImages[this.random]) {
+      this.chosenPic = this.factsImages[this.random];
+  
+    }
+
+
+
+ if(this.random == 0 ) {
       this.hedgehog = true;
       pic.classList.add("slidingIn");
       this.chosenPic = this.pics[2];
@@ -87,8 +101,4 @@ export class AboutMeComponent implements OnInit {
     } else if(this.random == 5) {
       this.erasmus = true;
       console.log('erasmus')
-    }
-  }
-  
-   
-}
+    } */

@@ -3,7 +3,7 @@
        <p class="bg-primary/25 p-8 rounded-lg drop-shadow-md text-xl">Mi nombre es Carmen, me encanta viajar y aprender cosas nuevas y hace un par de años descubrí el mundo del desarrollo web y desde entonces, intento aprender todo lo que puedo sobre él.</p> 
     </div>
     <div class="flex justify-center h-56">
-        <svg  (mouseover)="stop()" (mouseout)="continue()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+        <svg class="w-52" (mouseover)="stop()" (mouseout)="continue()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
             <defs>
                 <g class="code-block" id="code-block">
                     <rect ry="0" y="862" x="60" height="7.5" width="74"></rect>
@@ -95,30 +95,15 @@
             </div>
         </div>
     </div>
-    <div class="p-4 div-hover">
+    <div class="p-4 div-hover flex flex-col">
         <p class="pb-10">¿Quieres conocerme más? Prueba a hacer clic en el botón</p>
         <button (click)="generateFact()" class="button-fact items-center bg-button rounded-md	shadow-button text-primary cursor-pointer inline-flex h-12 justify-center px-4	relative whitespace-nowrap	focus:shadow-button-focus hover:shadow-button-hover active:shadow-button-active mb-4" role="button"><span *ngIf="!showFact">Dato curioso </span> {{choice}}</button>
         <div class="slides" *ngIf="!showFact"><img src="/assets/img/female-worker.png" alt=""></div>
         <div *ngIf="!showFact" class="slides1 "><img class="h-11" src="/assets/img/list.png" alt=""></div>
-        <div *ngIf="showFact" id="buttonPic"><img class="h-16" src="/assets/img/{{chosenPic}}" alt="Imagen relacionada con el dato curioso"></div>
+        <div *ngIf="showFact && random == 1" class="buttonPic"><img class="h-24" src="/assets/img/{{chosenPic}}" alt="Imagen relacionada con el dato curioso"></div>
+        <div *ngIf="showFact && random == 0" class="slides2"><img class="h-16" src="/assets/img/{{chosenPic}}" alt="Imagen relacionada con el dato curioso"></div>
+        <div *ngIf="showFact && random == 3" class="buttonPic tank"><img class="h-16" src="/assets/img/{{chosenPic}}" alt="Imagen relacionada con el dato curioso"></div>
+        <div *ngIf="showFact && random == 5" class="buttonPic tank"><img class="h-16" src="/assets/img/{{chosenPic}}" alt="Imagen relacionada con el dato curioso"></div>
         
-        <div *ngIf="showFact && cat">
-            <span>miauuuuu</span>
-        </div>
-        <div *ngIf="showFact && translation">
-            <span>translation</span>
-        </div>
-        <div *ngIf="showFact && tank">
-            <span>tank</span>
-        </div>
-        <div *ngIf="showFact && hedgehog">
-            <span>erizo</span>
-        </div>
-        <div *ngIf="showFact && malta">
-            <span>malta</span>
-        </div>
-        <div *ngIf="showFact && erasmus">
-            <span>erasmus</span>
-        </div>
     </div>
 </div>
