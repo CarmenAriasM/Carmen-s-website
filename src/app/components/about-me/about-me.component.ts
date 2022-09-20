@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { faHtml5, faCss3, faJs, faAngular, faLaravel, faGit, faPhp, faGithub, faFigma,faDrupal, faBootstrap, faSass, faNpm } from '@fortawesome/free-brands-svg-icons';
 
 
@@ -21,6 +21,7 @@ export class AboutMeComponent implements OnInit {
   bt = faBootstrap;
   sass = faSass;
   npm = faNpm;
+  public currentWindowWidth: any ;
 
   random: any;
   choice: any;
@@ -30,17 +31,22 @@ export class AboutMeComponent implements OnInit {
   factsImages: any = {
     0: ['erizo.gif'],
     1: ['cat.gif'],
-    2: ['translation'],
+    2: ['translation.png'],
     3: ['tank.gif'],
-    4: ['malta'],
+    4: ['malta.png'],
     5: ['irish.gif'],
   };   
   constructor() {
     
   }
   ngOnInit() {
-  }
+    this.currentWindowWidth = window.innerWidth;
 
+  }
+  @HostListener('window:resize')
+  onResize() {
+    this.currentWindowWidth = window.innerWidth
+  }
   stop() {
     const emoji: any = document.getElementById("code-block");
     emoji.classList.add("code-block-none");
