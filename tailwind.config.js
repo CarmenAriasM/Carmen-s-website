@@ -41,8 +41,10 @@ module.exports = {
     backgroundImage: {
       
       'none': 'none',
-      'foto-malta': "url('/assets/img/foto-malta_50.jpg')",
-      'foto-malta-grande': "url('/assets/img/foto-malta.jpg')",
+      'foto-yo': "url('/assets/img/yo.png')",
+      'foto-bg': "url('/assets/img/header-bg.png')",
+      'foto-code': "url('/assets/img/bg-codigo-light.png')",
+      'foto-code-dark': "url('/assets/img/bg-codigo.png')",
       'gradiant': 'linear-gradient(to right, var(--tw-gradient-stops))',
       'button': 'radial-gradient(100% 100% at 100% 0, #47B5FF 0, #1363DF 100%)',
       

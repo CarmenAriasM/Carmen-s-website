@@ -26,14 +26,14 @@ export class AboutMeComponent implements OnInit {
   random: any;
   choice: any;
   chosenPic: any;
-  facts = ["Me encantan los erizos", "Tengo un gato", "Estudié traducción en Sevilla", "Me gusta War Thunder", "La foto de arriba es de Malta", "Hice un Erasmus en Dublín"];
+  facts = ["Me encantan los erizos", "Tengo un gato", "Estudié traducción en Sevilla", "Me gusta War Thunder", "La foto de arriba está hecha con GIMP", "Hice un Erasmus en Dublín"];
   showFact: boolean = false;
   factsImages: any = {
     0: ['erizo.gif'],
     1: ['cat.gif'],
     2: ['translation.png'],
     3: ['tank.gif'],
-    4: ['malta.png'],
+    4: ['yo.png'],
     5: ['irish.gif'],
   };   
   constructor() {
