@@ -28,7 +28,7 @@ box-shadow: 0px 0px 8px rgba(0,0,0,.6);
       <div class="flex justify-end h-14">
         <div class="ml-6 flex justify-between md-menu:justify-around w-full items-center">
           <div class="hover:scale-110">
-            <a class="font-mono font-bold  md:text-2xl md:p-2.5	" href="/">
+            <a class="font-mono font-bold  md:text-2xl md:p-2.5	" routerLink="/">
             Carmen Arias
             <!-- <div *ngIf="!isDarkEnable"><img class="w-20" src="/assets/img/logocarmen.png" alt="" srcset=""></div>
             <div *ngIf="isDarkEnable"><img class="w-20" src="/assets/img/logocarmendark.png" alt="" srcset=""></div> -->
@@ -43,10 +43,10 @@ box-shadow: 0px 0px 8px rgba(0,0,0,.6);
             </a> 
           </div>
           <div class="hidden md-menu:flex lg:flex items-center space-x-1 md-menu:mr-6">
-            <a href="/" class="zoom py-4 px-2 text-gray-500 hover:text-white font-semibold ">Inicio</a>
-            <a routerLink="/sobre-mi"  class="zoom py-4 px-2 text-gray-500 font-semibold hover:text-white transition duration-300">Sobre mí</a>
-            <a href="/proyectos" class="zoom py-4 px-2 text-gray-500 font-semibold hover:text-white transition duration-300">Proyectos</a>
-            <a href="#" class="zoom py-4 px-2 text-gray-500 font-semibold hover:text-white transition duration-300">Contacto</a>
+            <a routerLink="/" class=" py-4 px-2 text-gray-500 hover:text-white font-semibold ">Inicio</a>
+            <a routerLink="/sobre-mi"  class=" py-4 px-2 text-gray-500 font-semibold hover:text-white transition duration-300">Sobre mí</a>
+            <a routerLink="/proyectos" class=" py-4 px-2 text-gray-500 font-semibold hover:text-white transition duration-300">Proyectos</a>
+            <a href="#" class=" py-4 px-2 text-gray-500 font-semibold hover:text-white transition duration-300">Contacto</a>
           </div>
         </div>
         <div class="mx-6 md-menu:hidden lg:hidden flex items-center">
@@ -59,12 +59,12 @@ box-shadow: 0px 0px 8px rgba(0,0,0,.6);
       </div>
     </div>
     
-    <div class="hidden mobile-menu text-gray-500 text-center font-bold bg-dark-secondary-bg">
+    <div class="hidden mobile-menu absolute w-full text-primary/75 text-center bg-header-color dark:bg-[url('/assets/img/header-bg.png')] font-bold">
       <ul class="">
-        <li><a routerLink="/" class="zoom block text-sm px-2 py-4 hover:bg-white hover:text-black transition duration-300">Inicio</a></li>
-        <li><a routerLink="/sobre-mi"  class="zoom block text-sm px-2 py-4 hover:bg-white hover:text-black transition duration-300">Sobre mí</a></li>
-        <li><a routerLink="/proyectos" class="zoom block text-sm px-2 py-4 hover:bg-white hover:text-black transition duration-300">Proyectos</a></li>
-        <li><a routerLink="#" class="zoom block text-sm px-2 py-4 hover:bg-white hover:text-black transition duration-300">Contacto</a></li>
+        <li><a routerLink="/" class="hover:scale-110 block text-sm px-2 py-4 hover:text-primary transition duration-300">Inicio</a></li>
+        <li><a routerLink="/sobre-mi"  class="hover:scale-110 block text-sm px-2 py-4 hover:bg-white hover:text-primary transition duration-300">Sobre mí</a></li>
+        <li><a routerLink="/proyectos" class="hover:scale-110 block text-sm px-2 py-4 hover:bg-white hover:text-primary transition duration-300">Proyectos</a></li>
+        <li><a routerLink="#" class="hover:scale-110 block text-sm px-2 py-4 hover:bg-white hover:text-primary transition duration-300">Contacto</a></li>
       </ul>
     </div>
   </nav>
@@ -73,9 +73,9 @@ box-shadow: 0px 0px 8px rgba(0,0,0,.6);
   </main>
   <footer>
     <nav class="text-primary z-50 dark:text-dark-text bg-header-color flex flex-col space-y-4 p-6 lg:flex-row lg:space-y-0 text-center lg:place-content-around">
-      <a href="/" class="">Inicio</a>
+      <a routerLink="/" class="">Inicio</a>
       <a routerLink="/sobre-mi" class="">Sobre mí</a>
-      <a href="/proyectos" class="">Proyectos</a>
+      <a routerLink="/proyectos" class="">Proyectos</a>
       <a href="#" class="">Contacto</a>
     </nav>
   </footer>

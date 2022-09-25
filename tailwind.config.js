@@ -6,6 +6,7 @@ module.exports = {
     colors: {
       // Light theme colors
       'primary': '#FFFFFF',
+      'black': '#000000',
       'secondary-bg': '#DFF6FF',
       'theme': '#fff',
       'header-color': '#06283D',
@@ -52,9 +53,16 @@ module.exports = {
       'button-hover': 'rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #1363DF 0 -3px 0 inset',
       'button-active': '#1363DF 0 3px 7px inset',
       'box': ' 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
-      'box-dark': '0 10px 15px -3px rgba(255, 255, 255, 0.392), 0 4px 6px -2px rgba(255, 255, 255, 0.792)',
+      'box-hover': ' 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
+      'box-dark': 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px',
+      'box-dark-hover': 'rgba(136, 165, 191, 0.68) 6px 2px 16px 0px',
     },
     extend: {},
+  },
+  variants: {
+    extend: {
+      animation: ['group-hover'],
+    },
   },
   plugins: [],
 };

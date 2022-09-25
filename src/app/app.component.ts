@@ -18,24 +18,19 @@ export class AppComponent {
   constructor() {}
   
   ngOnInit() {
-    /* const btn: any = document.querySelector(".nav-toggle");
-    const menu: any = document.querySelector(".mobile-menu");
-    btn.addEventListener("click", () => {
-      menu.classList.toggle("hidden");
-    }); */
-    const navToggle: any = document.querySelector('.nav-toggle')
-    const bars: any = document.querySelectorAll('.bar')
-    const menu: any = document.querySelector(".mobile-menu");
-    navToggle.addEventListener('click', () => {
-      bars.forEach((bar: { classList: { toggle: (arg0: string) => any; }; }) => bar.classList.toggle('x'))
-      menu.classList.toggle("hidden");
-    });
+    const navToggle: Element = document.querySelector('.nav-toggle')!;
+    navToggle.addEventListener('click', this.clickFunction);
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme) {
       this.presentTheme$.next(savedTheme);
     }
     
-    
+  }
+  clickFunction() { 
+    let bars = document.querySelectorAll('.bar')
+    let menu: Element = document.querySelector(".mobile-menu")!;
+    bars.forEach((bar: { classList: { toggle: (arg0: string) => any; }; }) => bar.classList.toggle('x'))
+    menu.classList.toggle("hidden");
   }
   changeTheme() {
     this.presentTheme$.value === 'theme-dark'
