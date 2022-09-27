@@ -24,23 +24,23 @@ export class AerIolarComponent implements OnInit {
     this.defaultTransform=0
   }
    goNext() {
-    this.defaultTransform = this.defaultTransform - 200;
+    this.defaultTransform = this.defaultTransform - 176;
     if (Math.abs(this.defaultTransform) >= this.slider.scrollWidth / 1) this.defaultTransform = 0;
     this.slider.style.transform = "translateX(" + this.defaultTransform + "px)";
   }
   goPrev() {
     if (Math.abs(this.defaultTransform) === 0) this.defaultTransform = 0;
-    else this.defaultTransform = this.defaultTransform + 200;
+    else this.defaultTransform = this.defaultTransform + 176;
     this.slider.style.transform = "translateX(" + this.defaultTransform + "px)";
   }
   goNext1() {
-    this.defaultTransform = this.defaultTransform - 360;
+    this.defaultTransform = this.defaultTransform - 320;
     if (Math.abs(this.defaultTransform) >= this.slider1.scrollWidth / 1.05) this.defaultTransform = 0;
     this.slider1.style.transform = "translateX(" + this.defaultTransform + "px)";
   }
   goPrev1() {
     if (Math.abs(this.defaultTransform) === 0) this.defaultTransform = 0;
-    else this.defaultTransform = this.defaultTransform + 360;
+    else this.defaultTransform = this.defaultTransform + 320;
     this.slider1.style.transform = "translateX(" + this.defaultTransform + "px)";
   }
 }
