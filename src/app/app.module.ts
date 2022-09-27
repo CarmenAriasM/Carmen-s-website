@@ -28,7 +28,7 @@ import { CasaPapelComponent } from './components/casa-papel/casa-papel.component
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
