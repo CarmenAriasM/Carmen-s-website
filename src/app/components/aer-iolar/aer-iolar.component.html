@@ -3,30 +3,54 @@
     <div class="pb-4"><a href="https://tfm-mariasma.netlify.app/" title="Ir a sitio web"><img src="/assets/img/aerIolar.png" alt="Captura de pantalla de Aer Iolar"></a></div>
     <div class="pb-4">Trabajo de fin de máster donde se ha creado el sitio web de una aerolínea ficticia llamada Aer Iolar. Desplegado en Netlify con el backend en Heroku. Para crearlo, se ha usado Angular para el frontend y Laravel para el backend.
     </div>
-    <div class="pb-4">En cuanto al diseño de este proyecto, se ha hecho un estudio de usabilidad, asimismo, también se ha creado un perfil de usuario y prototipos tanto en versión móvil como en versión ordenador en Figma. Si le interesa ver el trabajo escrito completo, puede descargarlo <span><a href="/assets/TFM.pdf" title="Descargar TFM" class="underline decoration-border-color text-border-color hover:text-route-link-active hover:decoration-route-link-active underline-offset-2"><b>aquí</b></a></span>.
+    <div class="pb-4">En cuanto al diseño de este proyecto, se ha hecho un estudio de usabilidad, asimismo, también se ha creado un perfil de usuario y prototipos tanto en versión móvil como en versión ordenador en Figma. Si le interesa ver el trabajo escrito completo, con los prototipos incluidos, puede descargarlo <span><a href="/assets/TFM.pdf" title="Descargar TFM" class="underline decoration-border-color text-border-color hover:text-route-link-active hover:decoration-route-link-active underline-offset-2"><b>aquí</b></a></span>.
     </div>
-    <div>carrusel de prototipos movil</div>
-    <div class="flex items-center justify-center w-full h-full py-24 sm:py-8 px-4">
+    <div>A continuación, se muestra una vista rápida de los prototipos:</div>
+     <div class="flex items-center justify-center w-full h-full py-24 sm:py-8 px-4">
         <div class="w-full relative flex items-center justify-center">
-          <button aria-label="slide backward" class="absolute z-30 left-0 ml-8 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer" (click)="goPrev()">
+          <button aria-label="slide backward" class="absolute z-30 left-0 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer" (click)="goPrev()">
             <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M7 1L1 7L7 13" stroke="#47B5FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
           </button>
-          <div class="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden">
+          <div class="w-11/12 h-full mx-auto overflow-x-hidden overflow-y-hidden">
             <div id="slider" class="h-full flex lg:gap-8 md:gap-6 gap-6 items-center justify-start transition ease-out duration-700">
-              <div class="flex flex-shrink-0 relative w-full sm:w-auto justify-center goOnZoom" *ngFor="let image of images" >
+              <div class="flex flex-shrink-0 relative  sm:w-auto justify-center goOnZoom" *ngFor="let image of images" >
                 <img  src="/assets/img/phone/{{image}}.png" alt="Prototipo móvil" class=" object-center max-h-72 pl-4" />
               </div>
             </div>
           </div>
-          <button aria-label="slide forward" class="absolute z-30 right-0 mr-8 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400" (click)="goNext()">
+          <button aria-label="slide forward" class="absolute z-30 right-0 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400" (click)="goNext()">
             <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M1 1L7 7L1 13" stroke="#47B5FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
           </button>
         </div>
-      </div>
+      </div> 
+
+      <div class="flex items-center justify-center w-full h-full py-24 sm:py-8 px-4">
+        <div class="w-full relative flex items-center justify-center">
+          <button aria-label="slide backward" class="absolute z-30 left-0 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer" (click)="goPrev1()">
+            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 1L1 7L7 13" stroke="#47B5FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+          <div class="w-11/12 h-full mx-auto overflow-x-hidden overflow-y-hidden">
+            <div id="slider1" class="h-full flex lg:gap-8 md:gap-6 gap-6 items-center justify-start transition ease-out duration-700">
+              <div class="flex flex-shrink-0 relative  sm:w-auto justify-center goOnZoom" *ngFor="let image of imagesDesktop" >
+                <img  src="/assets/img/desktop/{{image}}.png" alt="Prototipo móvil" class=" object-center max-h-72 pl-4" />
+              </div>
+            </div>
+          </div>
+          <button aria-label="slide forward" class="absolute z-30 right-0 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400" (click)="goNext1()">
+            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L7 7L1 13" stroke="#47B5FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+      </div> 
+
+  
     <div>carrusel de prototipos desktop</div>
     <div>funcionalidades</div>
     <div>si quieres visitar, aqui puedes</div>
