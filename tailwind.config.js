@@ -62,6 +62,7 @@ module.exports = {
     },
     backgroundSize: {
       'stars': '550px 550px, 350px 350px, 250px 250px, 150px 150px',
+      'cover': 'cover',
       
     },
     backgroundPosition: {

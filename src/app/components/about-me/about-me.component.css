@@ -39,16 +39,16 @@
 
 .slidingIn {
   position: absolute;
-  bottom: 260px;
+  bottom: 340px;
   animation: block 1s linear;
 }
 @keyframes block{
-  0%{left: 270px} 
+  0%{left: 350px} 
   100%{left: 0px}
 }
 .slides, .slides1, .slides2 {
   position: absolute;
-  bottom: 240px;
+  bottom: 320px;
   left: 33%;
   z-index: 1;
 }
@@ -64,12 +64,12 @@
 }
 
 @keyframes sladeIn{
-  0%{bottom: 240px} 
-  100%{bottom: 280px}
+  0%{bottom: 320px} 
+  100%{bottom: 360px}
 }
 .buttonPic {
   position: absolute;
-  bottom: 270px;
+  bottom: 350px;
   z-index: 999;
 }
 .tank {
@@ -89,7 +89,8 @@
 
 }
 .malta {
-  animation: float2 6s ease-in-out infinite;
+  animation: float2 4s ease-in-out infinite;
+  bottom: 365px;
 
 }
 
@@ -138,18 +139,18 @@
 }
 @media (min-width: 1024px) {
   .slides, .slides1, .slides2 {
-    bottom: 145px;
+    bottom: 175px;
   }
   .div-hover:hover .slides, .div-hover:hover .slides1, .slides2 {
     animation: sladeIn2 2s forwards;
   }
   
   @keyframes sladeIn2 {
-    0%{bottom: 145px} 
-    100%{bottom: 190px}
+    0%{bottom: 175px} 
+    100%{bottom: 225px}
   }
   .buttonPic {
-    bottom: 170px;
+    bottom: 200px;
     right: 40%;
   }
   .slides {
@@ -160,6 +161,9 @@
   }
   .left-side {
     left: 40%;
+  }
+  .malta {
+    bottom: 220px;
   }
   @keyframes goRight{
     0% {

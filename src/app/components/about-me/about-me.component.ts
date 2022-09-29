@@ -26,7 +26,7 @@ export class AboutMeComponent implements OnInit {
   random: any;
   choice: any;
   chosenPic: any;
-  facts = ["Me encantan los erizos", "Tengo un gato", "Estudié traducción en Sevilla", "Me gusta War Thunder", "La foto de arriba está hecha con GIMP", "Hice un Erasmus en Dublín"];
+  facts = ["Me encantan los erizos", "Tengo un gato", "Estudié traducción en Sevilla", "Me gusta War Thunder", "Estoy aprendiendo a usar GIMP", "Hice un Erasmus en Dublín"];
   showFact: boolean = false;
   factsImages: any = {
     0: ['erizo.gif'],
@@ -71,40 +71,4 @@ export class AboutMeComponent implements OnInit {
   }
   
    
-} /*  this.showFact = true;
-    this.random = Math.floor(Math.random() * this.facts.length);
-    this.choice = [this.facts[this.random]]
-
-    if(this.factsImages[this.random]) {
-      this.chosenPic = this.factsImages[this.random];
-  
-    }
-
-
-
- if(this.random == 0 ) {
-      this.hedgehog = true;
-      pic.classList.add("slidingIn");
-      this.chosenPic = this.pics[2];
-
-      console.log('erizo powerrrr')
-    } else if(this.random == 1) {
-      this.cat = true;
-      pic.classList.add("slidingIn");
-
-      this.chosenPic = this.pics[0];
-    pic.classList.add("slidingIn");
-    } else if(this.random == 2) {
-      this.translation = true;
-      this.chosenPic = this.pics[1];
-      console.log('translation!')
-    } else if(this.random == 3) {
-      this.tank = true;
-      console.log('TANK')
-    } else if(this.random == 4) {
-      this.malta = true;
-      console.log('malta')
-    } else if(this.random == 5) {
-      this.erasmus = true;
-      console.log('erasmus')
-    } */
+} 

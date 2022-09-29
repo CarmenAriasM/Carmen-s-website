@@ -85,7 +85,9 @@
       top: 100%;
     }
   }
-  
+  .transparent {
+    color: transparent;
+  }
   #form-submit span:nth-child(3) {
     bottom: 0;
     right: -100%;

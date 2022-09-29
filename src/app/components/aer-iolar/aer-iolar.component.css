@@ -32,3 +32,10 @@
 .transparent {
 	color: transparent;
   }
+
+@media (min-width: 1024px) {
+	 .p-main {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+}
