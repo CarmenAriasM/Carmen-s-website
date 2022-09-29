@@ -47,7 +47,8 @@ module.exports = {
       'foto-code-dark': "url('/assets/img/bg-codigo.png')",
       'gradiant': 'linear-gradient(to right, var(--tw-gradient-stops))',
       'button': 'radial-gradient(100% 100% at 100% 0, #47B5FF 0, #1363DF 100%)',
-      
+      'stars': 'radial-gradient(yellow, rgba(255,255,255,.2) 2px, transparent 40px), radial-gradient(yellow, rgba(255,255,255,.15) 1px, transparent 30px), radial-gradient(yellow, rgba(255,255,255,.1) 2px, transparent 40px), radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px)',
+            
     },
     boxShadow: {
       'button': 'rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset',
@@ -58,6 +59,13 @@ module.exports = {
       'box-hover': ' 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
       'box-dark': 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px',
       'box-dark-hover': 'rgba(136, 165, 191, 0.68) 6px 2px 16px 0px',
+    },
+    backgroundSize: {
+      'stars': '550px 550px, 350px 350px, 250px 250px, 150px 150px',
+      
+    },
+    backgroundPosition: {
+      'stars': '0 0, 0px -50px, 150px -20px, 40px 270px',
     },
     extend: {},
   },

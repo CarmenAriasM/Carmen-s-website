@@ -1,12 +1,12 @@
-<div class="p-4 text-center">
-    <div class="p-4">Aer Iolar</div>
-    <div class="pb-4"><a href="https://tfm-mariasma.netlify.app/" title="Ir a sitio web"><img src="/assets/img/aerIolar.png" alt="Captura de pantalla de Aer Iolar"></a></div>
-    <div class="pb-4">Trabajo de fin de máster donde se ha creado el sitio web de una aerolínea ficticia llamada Aer Iolar. Desplegado en Netlify con el backend en Heroku. Para crearlo, se ha usado Angular para el frontend y Laravel para el backend.
+<div class="p-4 text-center flex flex-col items-center">
+    <div class="p-4 font-semibold title bg-clip-text transparent bg-gradiant p-[6px] from-[#06283D] via-[#47B5FF] to-[#06283D] text-2xl font-semibold text-center pt-6 dark:from-[#06283D] dark:via-[#47B5FF]   dark:to-[#06283D]">Aer Iolar</div>
+    <div class="pb-4"><a href="https://tfm-mariasma.netlify.app/" title="Visitar Aer Iolar"><img src="/assets/img/aerIolar.png" alt="Captura de pantalla de Aer Iolar"></a></div>
+    <div class="pb-4">Trabajo de fin de máster donde se ha creado el sitio web de una aerolínea ficticia llamada Aer Iolar. Desplegado en Netlify con el backend en Heroku. Para crear esta aplicación web progresiva (PWA), se ha usado Angular para el frontend y Laravel para el backend.
     </div>
     <div class="pb-4">En cuanto al diseño de este proyecto, se ha hecho un estudio de usabilidad, asimismo, también se ha creado un perfil de usuario y prototipos tanto en versión móvil como en versión ordenador en Figma. Si le interesa ver el trabajo escrito completo, con los prototipos incluidos, puede descargarlo <span><a href="/assets/TFM.pdf" title="Descargar TFM" class="underline decoration-border-color text-border-color hover:text-route-link-active hover:decoration-route-link-active underline-offset-2"><b>aquí</b></a></span>.
     </div>
     <div>A continuación, se muestra una vista rápida de los prototipos:</div>
-     <div class="flex items-center justify-center w-full h-full py-24 sm:py-8 px-4">
+     <div class="flex items-center justify-center w-full h-full py-7 px-4">
         <div class="w-full relative flex items-center justify-center">
           <button aria-label="slide backward" class="absolute z-30 left-0 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer" (click)="goPrev()">
             <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -28,7 +28,7 @@
         </div>
       </div> 
 
-      <div class="flex items-center justify-center w-full h-full py-24 sm:py-8 px-4">
+      <div class="flex items-center justify-center w-full h-full py-7 px-4">
         <div class="w-full relative flex items-center justify-center">
           <button aria-label="slide backward" class="absolute z-30 left-0 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer" (click)="goPrev1()">
             <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -50,11 +50,22 @@
         </div>
       </div> 
 
-  
-    <div>carrusel de prototipos desktop</div>
-    <div>funcionalidades</div>
-    <div>si quieres visitar, aqui puedes</div>
-    <div>añadir avion que vuela como en aer iolar</div>
-
-   
+    <div>Algunas de las funcionalidades que este sitio web presenta son:</div>
+    <div class="mt-4 bg-primary dark:bg-header-color rounded-md p-2.5	md:max-w-2xl md:px-6  ">
+      <ul class="fa-ul text-left ">
+        <li class="pb-4 pt-6"><span class="fa-li pt-6"><i class="fas fa-plane text-route-link-active"></i></span>Búsqueda de vuelos.</li>
+        <li class="pb-4"><span class="fa-li"><i class="fas fa-plane text-route-link-active"></i></span>Gestión de reservas mediante búsqueda de número de referencia.</li>
+        <li class="pb-4"><span class="fa-li"><i class="fas fa-plane text-route-link-active"></i></span>Registro e inicio de sesión.</li>
+        <li class="pb-4"><span class="fa-li"><i class="fas fa-plane text-route-link-active"></i></span>Recuperación de contraseña mediante correo electrónico.</li>
+        <li class="pb-4"><span class="fa-li"><i class="fas fa-plane text-route-link-active"></i></span>Actualización del perfil de usuario.</li>
+        <li class="pb-4"><span class="fa-li"><i class="fas fa-plane text-route-link-active"></i></span>Mapa de asientos interactivo.</li>
+        <li class="pb-4"><span class="fa-li"><i class="fas fa-plane text-route-link-active"></i></span>Envío de formulario de ayuda al correo de la empresa.</li>
+      </ul>
+    </div>
+    <div class="py-6">Si le gustaría ver el sitio web en funcionamiento, haga clic <a href="https://tfm-mariasma.netlify.app/" title="Visitar Aer Iolar" class="underline decoration-border-color text-border-color hover:text-route-link-active hover:decoration-route-link-active underline-offset-2"><b>aquí</b></a> o en el avión debajo.</div>
+    <div class=" mt-6 flex w-72 overflow-hidden justify-center bg-button dark:bg-black dark:bg-stars rounded-lg px-10 pt-10 flex-col items-center max-w-xs	ml-auto mr-auto ">
+      <a href="https://tfm-mariasma.netlify.app/" title="Visitar Aer Iolar" class="plane"><img src="/assets/img/plane.png" alt="Dibujo de un avión"></a>
+      <div class="pt-6 animate-block" id="block"><img class="w-10" src="/assets/img/building.png" alt="Dibujo de un edificio"></div>
+<!--       <div class="pt-6 animate-block2" id="block2"><img src="/assets/img/building.png" alt="Dibujo de un edificio"></div>
+ -->    </div>
 </div> 

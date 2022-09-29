@@ -158,8 +158,8 @@ position: relative;
   width: 40px;
 }
 @keyframes block{
-  0%{left: 270px} 
-  100%{left: -20px}
+  0%{left: 290px} 
+  100%{left: -40px}
 }
 .animate-block {
   animation: block 1s infinite linear;
@@ -213,8 +213,8 @@ margin: 65px auto auto auto;
     left: 150px;
   }
   @keyframes block{
-    0%{left: 150px} 
-    100%{left: -20px}
+    0%{left: 170px} 
+    100%{left: -40px}
   }
 }
 @media (min-width: 1024px) {

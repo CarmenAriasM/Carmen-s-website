@@ -43,4 +43,5 @@ export class AerIolarComponent implements OnInit {
     else this.defaultTransform = this.defaultTransform + 320;
     this.slider1.style.transform = "translateX(" + this.defaultTransform + "px)";
   }
+ 
 }
