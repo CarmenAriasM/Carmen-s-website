@@ -12,14 +12,14 @@ const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'sobre-mi', component: AboutMeComponent }, 
   { path: 'proyectos', component: ProjectsComponent }, 
-  { path: 'aer-iolar', component: AerIolarComponent }, 
-  { path: 'festival', component: FestivalComponent }, 
-  { path: 'casa-papel', component: CasaPapelComponent }, 
+  { path: 'proyectos/aer-iolar', component: AerIolarComponent }, 
+  { path: 'proyectos/festival', component: FestivalComponent }, 
+  { path: 'proyectos/casa-papel', component: CasaPapelComponent }, 
   { path: 'contacto', component: ContactComponent }, 
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {scrollPositionRestoration: 'enabled'})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
