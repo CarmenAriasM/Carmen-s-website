@@ -59,6 +59,8 @@ module.exports = {
       'box-hover': ' 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
       'box-dark': 'rgba(136, 165, 191, 0.48) 6px 2px 16px 0px',
       'box-dark-hover': 'rgba(136, 165, 191, 0.68) 6px 2px 16px 0px',
+      'form-shadow': 'rgba(0, 0, 0, .6) 0 15px 25px ',
+      'form-shadow-light': 'rgba(255, 255, 255, 0.6) 0 15px 25px ',
     },
     backgroundSize: {
       'stars': '550px 550px, 350px 350px, 250px 250px, 150px 150px',

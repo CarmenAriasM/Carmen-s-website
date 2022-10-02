@@ -12,6 +12,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AerIolarComponent } from './components/aer-iolar/aer-iolar.component';
 import { FestivalComponent } from './components/festival/festival.component';
 import { CasaPapelComponent } from './components/casa-papel/casa-papel.component'
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -29,6 +31,8 @@ import { CasaPapelComponent } from './components/casa-papel/casa-papel.component
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,13 @@
+.transparent {
+    color: transparent;
+}
+
+
+  .border-input {
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    margin-bottom: 30px;
+    outline: none;
+    background: transparent;
+  }
+ 

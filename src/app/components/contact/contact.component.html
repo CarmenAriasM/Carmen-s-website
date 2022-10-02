@@ -1,1 +1,29 @@
-<p>contact works!</p>
+<div class=" p-4">
+    <h2 class="bg-clip-text transparent bg-gradiant p-6 from-[#47B5FF] via-[#06283D] to-[#47B5FF] text-2xl font-semibold text-center pt-6 dark:from-[#06283D] dark:via-[#47B5FF] dark:to-[#06283D] title">Contacto</h2>
+</div>
+<div class="flex justify-center items-center flex-col p-2.5">
+    <form class="flex flex-col h-[30rem] space-y-12 p-4 m-4 bg-black text-primary dark:text-black box-hover shadow-md hover:shadow-box-hover dark:form-shadow-light" [formGroup]="form" method="post" (ngSubmit)="onSubmit()">
+        <div class="user-box flex flex-col">
+            Nombre
+            <input [formControl]="name" required class="border-input">
+        </div>
+        <div class="user-box flex flex-col">
+            Correo electrónico
+            <input [formControl]="email" placeholder="email@example.com" required class="border-input">
+        </div>
+        <div class="user-box flex flex-col">
+            Mensaje
+            <textarea [formControl]="message" maxlength="256" placeholder="I'm interested in..." required class="border-input"></textarea>
+        </div>
+        
+        <button [disabled]="isLoading" class="submit" type="submit" id="form-submit"><span></span>
+                <span></span>
+                <span></span>
+                <span></span>Enviar</button>
+        <input [formControl]="honeypot" class="hidden" type="text" />
+        <div [ngClass]="!submitted? 'hidden' : 'visible'" class="center-text" >
+            
+        <span>{{responseMessage}}</span>
+        </div>
+    </form>
+</div>
