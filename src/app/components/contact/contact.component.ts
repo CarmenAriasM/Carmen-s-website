@@ -8,7 +8,7 @@ import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms'
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-
+  
   form: FormGroup;
   name: FormControl = new FormControl("", [Validators.required]);
   email: FormControl = new FormControl("", [Validators.required, Validators.email]);
@@ -43,7 +43,7 @@ export class ContactComponent implements OnInit {
           } 
           this.form.enable();
           this.submitted = true;
-          this.isLoading = false; // re enable the submit button
+          this.isLoading = false;
           console.log(response);
         },
         (error) => {
@@ -56,5 +56,8 @@ export class ContactComponent implements OnInit {
       );
     }
   }
-
+  checkSubmission() {
+    this.submitted = true;
+    this.responseMessage = "Tiene que rellenar el formulario.";
+  }
 }

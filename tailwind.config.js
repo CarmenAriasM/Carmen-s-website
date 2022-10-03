@@ -18,6 +18,7 @@ module.exports = {
       'color1': '#192E47',
       'color2': '#030617',
       'emoji': '#eeb517',
+      'red': '#FF0000',
       
       // Dark theme colors
       'dark-text': '#FFFFFF',
