@@ -1,11 +1,12 @@
 <div class=" p-4">
     <h2 class="bg-clip-text transparent bg-gradiant p-6 from-[#47B5FF] via-[#06283D] to-[#47B5FF] text-2xl font-semibold text-center pt-6 dark:from-[#06283D] dark:via-[#47B5FF] dark:to-[#06283D] title">Contacto</h2>
 </div>
-<div class="flex justify-center items-center flex-col p-2.5">
-    <form class="flex flex-col p-9 m-4 bg-black dark:bg-primary rounded-lg text-primary dark:text-black box-hover shadow-md hover:shadow-box-hover dark:form-shadow-light items-center" [formGroup]="form" method="post" (ngSubmit)="onSubmit()">
+<div class="text-center p-4 pt-0">Si quiere ponerse en contacto conmigo, puede hacerlo por redes sociales o a través de este formulario.</div>
+<div class="flex justify-center items-center flex-col p-2.5 lg:pb-6">
+    <form class="flex flex-col p-9 m-4 bg-primary dark:bg-header-color rounded-lg text-black dark:text-primary box-hover shadow-md hover:shadow-box-hover dark:hover:shadow-box-dark items-center lg:w-2/4 lg:grid lg:grid-cols-2 lg:gap-4 lg:min-h-72	" [formGroup]="form" method="post" (ngSubmit)="onSubmit()">
         <div class="flex flex-col">
             Nombre
-            <input [formControl]="name" required class="border-input border-primary dark:border-black text-primary dark:text-black">
+            <input [formControl]="name" required class="border-input dark:border-primary border-black dark:text-primary text-black">
             <div *ngIf="name.invalid && (name.dirty || name.touched)" class="">
                 <div *ngIf="name.errors?.['required']" class="text-red mb-2">
                     Este campo es obligatorio.
@@ -14,7 +15,7 @@
         </div>
         <div class="flex flex-col">
             Correo electrónico
-            <input [formControl]="email" placeholder="correo@ejemplo.com" required class="border-input border-primary dark:border-black text-primary dark:text-black">
+            <input [formControl]="email" placeholder="correo@ejemplo.com" required class="border-input dark:border-primary border-black dark:text-primary text-black">
             <div *ngIf="email.invalid && (email.dirty || email.touched)" class="">
                 <div *ngIf="email.errors?.['required']" class="text-red mb-2">
                     Este campo es obligatorio.
@@ -28,18 +29,35 @@
         </div>
         <div class="flex flex-col">
             Mensaje
-            <textarea [formControl]="message" maxlength="256" required class="border-input border-primary dark:border-black text-primary dark:text-black"></textarea>
+            <textarea [formControl]="message" maxlength="256" required class="border-input dark:border-primary border-black dark:text-primary text-black"></textarea>
             <div *ngIf="message.invalid && (message.dirty || message.touched)" class="">
                 <div *ngIf="message.errors?.['required']" class="text-red mb-2">
                     Este campo es obligatorio.
                 </div>
             </div>
         </div>
-        
-        <button [disabled]="isLoading" class="rounded-full bg-primary dark:bg-black p-2 mt-4 w-2/3 text-black dark:text-primary dark:hover:bg-dark-theme dark:active:bg-route-link-active hover:bg-dark-theme hover:text-primary active:bg-route-link-active ease-in duration-300" type="submit" id="form-submit" (click)="checkSubmission()">Enviar</button>
+        <div class="w-full flex justify-center">
+            <button [disabled]="isLoading" class="rounded-full bg-header-color dark:bg-black p-2 mt-4 w-2/3 text-primary hover:bg-dark-theme active:bg-route-link-active dark:hover:bg-dark-theme dark:active:bg-route-link-active ease-in duration-300" type="submit" id="form-submit" (click)="checkSubmission()">Enviar</button>
+        </div>
         <input [formControl]="honeypot" class="hidden" type="text" />
-        <div [ngClass]="!submitted? 'hidden' : 'visible'" class="text-center p-4 mt-2.5" >  
+        <div [ngClass]="!submitted? 'hidden' : 'visible'" class="text-center mt-2.5 col-start-1	col-end-3 text-lg" >  
             <span>{{responseMessage}}</span>
         </div> 
     </form>
+</div>
+<div class="lg:flex lg:justify-center">
+    <ol class="pt-5 items-center flex flex-col lg:flex-row lg:justify-around lg:w-2/3 lg:text-center dark:text-border-color space-y-6 lg:space-y-0 pb-4 lg:p-6">
+        <li class="hover:scale-110 max-w"><a class="hover-underline-animation after:bg-header-color dark:after:bg-border-color " href="https://github.com/CarmenAriasM"><i class="fab fa-github pr-1.5"></i>GitHub</a></li>
+        <li class="hover:scale-110 mb-2 max-w"><a class="hover-underline-animation after:bg-header-color dark:after:bg-border-color" href="https://www.linkedin.com/in/carmen-arias-mart%C3%ADn/" ><i class="fab fa-linkedin pr-1.5 max-w"></i>Linkedin</a></li>
+        <li class="hover:scale-110 mb-2 max-w"><a class="hover-underline-animation after:bg-header-color dark:after:bg-border-color" href="mailto:maricarmen98a@gmail.com"><i class="fas fa-envelope pr-1.5"></i>Gmail</a></li>
+    </ol>
+</div>
+<div class="flex justify-center pt-4 flex-col items-center"> 
+    <p class="p-4 text-center">Si quiere echarle un ojo a los sitios web de los que hablo en Proyectos, puede acceder a ellos haciendo clic en la imagen.</p>
+    
+    <div class="pb-4 lg:mb-8 w-10/12 flex justify-center flex-col lg:flex-row items-center space-y-4 lg:space-y-0">
+        <a href="https://tfm-mariasma.netlify.app/" class="flex justify-center"><img src="/assets/img/aerIolar.png" alt="Captura de pantalla de Aer Iolar" class="rounded-lg transform lg:w-11/12 lg:h-44 transition duration-500 hover:scale-110 max-w-md w-full"></a>
+        <a href="https://pec3-casa-de-papel.netlify.app/" class="flex justify-center"><img src="/assets/img/casa-papel.png" alt="Captura de pantalla de La casa de papel" class="rounded-lg transform lg:w-11/12 lg:h-44 transition duration-500 hover:scale-110 max-w-md w-full"></a>
+        <a href="https://festival-musica-3.netlify.app" class="flex justify-center"><img src="/assets/img/festival.png" alt="Captura de pantalla de Festival de música" class="rounded-lg transform lg:w-11/12 lg:h-44 transition duration-500 hover:scale-110 max-w-md w-full"></a>
+    </div>
 </div>

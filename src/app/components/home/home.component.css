@@ -19,12 +19,7 @@
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-
-.polygon {
-  background-color: #47B5FF;
-  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
-}
-#form-submit {
+#descargar-button {
     position: relative;
     display: inline-block;
     padding: 10px 20px;
@@ -37,19 +32,19 @@
     letter-spacing: 4px
   }
   
-  #form-submit:hover {
+  #descargar-button:hover {
     background: #47B5FF;
     color: #fff;
     border-radius: 5px;
     box-shadow: 0 0 5px #47B5FF, 0 0 25px #47B5FF, 0 0 50px #47B5FF, 0 0 100px #47B5FF;
   }
   
-  #form-submit span {
+  #descargar-button span {
     position: absolute;
     display: block;
   }
   
-  #form-submit span:nth-child(1) {
+  #descargar-button span:nth-child(1) {
     top: 0;
     left: -100%;
     width: 100%;
@@ -67,7 +62,7 @@
     }
   }
   
-  #form-submit span:nth-child(2) {
+  #descargar-button span:nth-child(2) {
     top: -100%;
     right: 0;
     width: 2px;
@@ -88,7 +83,7 @@
   .transparent {
     color: transparent;
   }
-  #form-submit span:nth-child(3) {
+  #descargar-button span:nth-child(3) {
     bottom: 0;
     right: -100%;
     width: 100%;
@@ -107,7 +102,7 @@
     }
   }
   
-  #form-submit span:nth-child(4) {
+  #descargar-button span:nth-child(4) {
     bottom: -100%;
     left: 0;
     width: 2px;

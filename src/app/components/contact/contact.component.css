@@ -1,21 +1,33 @@
 .transparent {
     color: transparent;
 }
-
-
-  .border-input {
-    border-bottom: 1px solid;
-    margin-bottom: 10px;
-    outline: none;
-    background: transparent;
-  }
-  
-.notVisible {
-  display: none;
+h2 {
+  font-size: 2rem;
 }
-.visible {
-  display: block;
+.border-input {
+  border-bottom: 1px solid;
+  margin-bottom: 10px;
+  outline: none;
+  background: transparent;
 }
-.example-container .mat-form-field + .mat-form-field {
-  margin-left: 8px;
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
